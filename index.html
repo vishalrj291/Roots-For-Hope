@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots of Hope — Nurturing Communities, Growing Futures</title>
+    <meta name="description" content="Roots of Hope is a grassroots NGO dedicated to education, healthcare, environmental sustainability, and women empowerment in underserved communities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Floating Leaves Canvas -->
+    <canvas id="leaves-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4C20 4 8 12 8 22C8 28.627 13.373 34 20 34C26.627 34 32 28.627 32 22C32 12 20 4 20 4Z" fill="currentColor" opacity="0.2"/>
+                    <path d="M20 8C20 8 12 14 12 22C12 26.418 15.582 30 20 30C24.418 30 28 26.418 28 22C28 14 20 8 20 8Z" fill="currentColor" opacity="0.4"/>
+                    <path d="M20 12C20 12 15 16 15 22C15 24.761 17.239 27 20 27C22.761 27 25 24.761 25 22C25 16 20 12 20 12Z" fill="currentColor" opacity="0.7"/>
+                    <line x1="20" y1="22" x2="20" y2="38" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                </svg>
+                <span>Roots of Hope</span>
+            </a>
+            <div class="nav-links">
+                <a href="#mission" class="nav-link">Our Story</a>
+                <a href="#impact" class="nav-link">Impact</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#stories" class="nav-link">Stories</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#involved" class="nav-btn">Get Involved</a>
+            </div>
+            <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="#mission" class="mobile-link">Our Story</a>
+            <a href="#impact" class="mobile-link">Impact</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#stories" class="mobile-link">Stories</a>
+            <a href="#journey" class="mobile-link">Journey</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#involved" class="mobile-link mobile-link--cta">Get Involved</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-bg" data-parallax="0.4">
+            <img src="images/hero.png" alt="Children gathering under a tree in a rural village" loading="eager">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tag reveal-up">Est. 2012 — A Movement of Compassion</p>
+            <h1 class="hero-title reveal-up" style="animation-delay: 0.2s">
+                Every life we touch<br>
+                <em>becomes a seed of hope</em>
+            </h1>
+            <p class="hero-subtitle reveal-up" style="animation-delay: 0.4s">
+                We walk alongside communities — empowering them to write their own stories of resilience, dignity, and growth.
+            </p>
+            <div class="hero-actions reveal-up" style="animation-delay: 0.6s">
+                <a href="#mission" class="btn btn-primary">Discover Our Story</a>
+                <a href="#projects" class="btn btn-ghost">See Our Work</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Organic Divider -->
+    <div class="divider divider--wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="var(--warm-white)"/>
+        </svg>
+    </div>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section section--mission">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-text scroll-reveal">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">Born from a simple belief:<br><em>communities hold the answers</em></h2>
+                    <p class="mission-lead">
+                        In 2012, a small group of dreamers gathered in a village classroom with a single question — <strong>what if we listened first?</strong>
+                    </p>
+                    <p>
+                        What began as conversations under banyan trees has grown into a movement spanning 140 villages. We don't arrive with blueprints. We arrive with open hands and open hearts, learning the rhythm of each community before taking a single step.
+                    </p>
+                    <p>
+                        Our work is rooted in trust. From education and healthcare to environmental stewardship and women's empowerment, every initiative is co-created with the people it serves. Because lasting change doesn't come from the outside — it grows from within.
+                    </p>
+                </div>
+                <div class="mission-image scroll-reveal" style="--delay: 0.2s">
+                    <div class="image-frame image-frame--organic">
+                        <img src="images/community.png" alt="Community gathering in warm sunset light" loading="lazy">
+                    </div>
+                    <div class="mission-quote">
+                        <blockquote>
+                            "The most powerful thing we can do is believe in someone before they believe in themselves."
+                        </blockquote>
+                        <cite>— Priya Sharma, Founder</cite>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision Cards -->
+            <div class="vision-row scroll-reveal" style="--delay: 0.3s">
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5" opacity="0.3"/><path d="M24 12V24L32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="3" fill="currentColor" opacity="0.5"/></svg>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To walk alongside underserved communities, co-creating sustainable pathways to education, health, livelihood, and dignity — one village at a time.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L28 16H40L30 24L34 36L24 28L14 36L18 24L8 16H20L24 4Z" stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.15"/></svg>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>A world where every community has the agency, resources, and resilience to thrive — where no child is left behind and no voice goes unheard.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C24 4 4 18 4 28C4 38 14 44 24 44C34 44 44 38 44 28C44 18 24 4 24 4Z" stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.15"/><path d="M24 16C24 16 16 22 16 28C16 32.4 19.6 36 24 36C28.4 36 32 32.4 32 28C32 22 24 16 24 16Z" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Compassion over charity. Listening before leading. Community ownership. Environmental harmony. Transparency in every action we take.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section section--impact">
+        <div class="impact-bg" data-parallax="0.2">
+            <img src="images/landscape.png" alt="Peaceful rolling hills at golden hour" loading="lazy">
+        </div>
+        <div class="impact-overlay"></div>
+        <div class="container impact-content">
+            <span class="section-label section-label--light scroll-reveal">Our Impact</span>
+            <h2 class="section-title section-title--light scroll-reveal" style="--delay: 0.1s">
+                Numbers tell a story,<br><em>but people write it</em>
+            </h2>
+            <div class="impact-grid">
+                <div class="impact-stat scroll-reveal" style="--delay: 0.15s">
+                    <span class="stat-number" data-count="14200">0</span>
+                    <span class="stat-label">Children educated through<br>our learning programs</span>
+                </div>
+                <div class="impact-stat scroll-reveal" style="--delay: 0.25s">
+                    <span class="stat-number" data-count="140">0</span>
+                    <span class="stat-label">Villages where we walk<br>alongside communities</span>
+                </div>
+                <div class="impact-stat scroll-reveal" style="--delay: 0.35s">
+                    <span class="stat-number" data-count="52000">0</span>
+                    <span class="stat-label">Trees planted, breathing<br>life back into the earth</span>
+                </div>
+                <div class="impact-stat scroll-reveal" style="--delay: 0.45s">
+                    <span class="stat-number" data-count="3800">0</span>
+                    <span class="stat-label">Women empowered through<br>skill and livelihood programs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section--projects">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Where compassion<br><em>meets action</em></h2>
+                <p class="section-desc">Each project is born from a community's own aspirations. We don't bring solutions — we help them flourish.</p>
+            </div>
+
+            <div class="projects-showcase">
+                <!-- Project 1 -->
+                <article class="project-card project-card--large scroll-reveal">
+                    <div class="project-image">
+                        <img src="images/education.png" alt="Children studying in a bright classroom" loading="lazy">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Education</span>
+                        <h3 class="project-title">Seeds of Learning</h3>
+                        <p class="project-desc">Community-run learning centers in 85 villages, where children don't just study — they discover who they can become. Our curriculum blends traditional knowledge with modern skills, honoring the wisdom that already exists.</p>
+                        <div class="project-meta">
+                            <span>8,500+ students</span>
+                            <span>85 villages</span>
+                            <span>Since 2013</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 & 3 -->
+                <div class="project-pair">
+                    <article class="project-card scroll-reveal" style="--delay: 0.1s">
+                        <div class="project-image">
+                            <img src="images/environment.png" alt="Volunteers planting trees together" loading="lazy">
+                            <div class="project-image-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Environment</span>
+                            <h3 class="project-title">Green Roots Initiative</h3>
+                            <p class="project-desc">A community-led reforestation movement that has planted over 52,000 native trees, restoring watersheds and creating sustainable livelihoods through forest-based economies.</p>
+                            <div class="project-meta">
+                                <span>52,000+ trees</span>
+                                <span>32 districts</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card scroll-reveal" style="--delay: 0.2s">
+                        <div class="project-image">
+                            <img src="images/healthcare.png" alt="Healthcare worker with patients at rural camp" loading="lazy">
+                            <div class="project-image-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Healthcare</span>
+                            <h3 class="project-title">Healing Hands</h3>
+                            <p class="project-desc">Mobile health clinics bringing primary care, maternal health support, and preventive medicine to remote communities where a hospital is often a day's journey away.</p>
+                            <div class="project-meta">
+                                <span>23,000+ patients</span>
+                                <span>Monthly camps</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Project 4 -->
+                <article class="project-card project-card--large project-card--reverse scroll-reveal">
+                    <div class="project-image">
+                        <img src="images/empowerment.png" alt="Women learning skills in a workshop" loading="lazy">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Empowerment</span>
+                        <h3 class="project-title">Her Own Wings</h3>
+                        <p class="project-desc">When a woman earns her own living, she doesn't just lift herself — she lifts her entire community. Our livelihood program provides skills training, micro-enterprise support, and a network of solidarity that turns dreams into businesses.</p>
+                        <div class="project-meta">
+                            <span>3,800+ women</span>
+                            <span>1,200+ enterprises</span>
+                            <span>Since 2015</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organic Divider -->
+    <div class="divider divider--curve">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,0 C480,100 960,100 1440,0 L1440,100 L0,100 Z" fill="var(--sage-light)"/>
+        </svg>
+    </div>
+
+    <!-- Stories Section -->
+    <section id="stories" class="section section--stories">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-label">Voices of Change</span>
+                <h2 class="section-title">The stories that<br><em>keep us going</em></h2>
+            </div>
+
+            <div class="stories-layout">
+                <div class="story-featured scroll-reveal">
+                    <div class="story-featured-image">
+                        <img src="images/volunteers.png" alt="Volunteers distributing supplies in community" loading="lazy">
+                    </div>
+                    <div class="story-featured-content">
+                        <span class="story-category">Volunteer Story</span>
+                        <h3>Ananya's first summer changed everything</h3>
+                        <p>"I came to teach for two weeks. Three years later, I'm still here. The children didn't need my knowledge — they needed someone to see them. And in seeing them, I found myself."</p>
+                        <div class="story-author">
+                            <strong>Ananya Krishnan</strong>
+                            <span>Volunteer since 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stories-grid">
+                    <div class="story-card scroll-reveal" style="--delay: 0.1s">
+                        <div class="story-card-accent"></div>
+                        <span class="story-category">Community</span>
+                        <h4>From one well to clean water for a village</h4>
+                        <p>"When the borewell was dug, women no longer had to walk four kilometers. That single well changed the health of 200 families."</p>
+                        <cite>— Lakshmi Devi, Sundarpura Village</cite>
+                    </div>
+                    <div class="story-card scroll-reveal" style="--delay: 0.2s">
+                        <div class="story-card-accent"></div>
+                        <span class="story-category">Education</span>
+                        <h4>Ravi's journey from the fields to university</h4>
+                        <p>"My father said I would tend cattle like him. The learning center showed me a different path. This year, I enrolled in engineering."</p>
+                        <cite>— Ravi Meena, first-generation college student</cite>
+                    </div>
+                    <div class="story-card scroll-reveal" style="--delay: 0.3s">
+                        <div class="story-card-accent"></div>
+                        <span class="story-category">Empowerment</span>
+                        <h4>Fatima's tailoring unit employs 12 women</h4>
+                        <p>"They gave me a sewing machine and belief. Today I run a unit that supports twelve families. My daughters will never feel helpless."</p>
+                        <cite>— Fatima Begum, Entrepreneur</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey / Timeline Section -->
+    <section id="journey" class="section section--journey">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-label">Our Journey</span>
+                <h2 class="section-title">A decade of growing<br><em>together</em></h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item scroll-reveal" style="--delay: 0.05s">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2012</span>
+                        <h4>The Beginning</h4>
+                        <p>Five friends, one village, and a borrowed classroom. We started with 23 children and a conviction that education could change everything.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal" style="--delay: 0.1s">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2014</span>
+                        <h4>Growing Roots</h4>
+                        <p>Expanded to 12 villages. Launched the first women's self-help group. The community began leading its own programs.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal" style="--delay: 0.15s">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2016</span>
+                        <h4>Green Roots Born</h4>
+                        <p>Planted 10,000 trees in our first reforestation drive. Communities adopted forest guardianship as part of their identity.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal" style="--delay: 0.2s">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2019</span>
+                        <h4>Healing Hands Launch</h4>
+                        <p>Our first mobile health clinic rolled into remote areas, bringing healthcare within reach for thousands of families.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal" style="--delay: 0.25s">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h4>A Decade of Impact</h4>
+                        <p>Crossed 140 villages, 14,000+ children educated, and 3,800 women empowered. The seeds we planted are now forests.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal" style="--delay: 0.3s">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2026</span>
+                        <h4>The Road Ahead</h4>
+                        <p>Expanding to 300 villages by 2030. Launching digital learning hubs and sustainable agriculture programs. The best is yet to come.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section section--gallery">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-label">Visual Journey</span>
+                <h2 class="section-title">Moments that<br><em>speak louder than words</em></h2>
+            </div>
+        </div>
+
+        <div class="gallery-masonry">
+            <div class="gallery-item gallery-item--tall scroll-reveal">
+                <img src="images/hero.png" alt="Children under a tree" loading="lazy">
+                <div class="gallery-caption">
+                    <span>Evening lessons under the village banyan tree</span>
+                </div>
+            </div>
+            <div class="gallery-item scroll-reveal" style="--delay: 0.08s">
+                <img src="images/education.png" alt="Classroom learning" loading="lazy">
+                <div class="gallery-caption">
+                    <span>A bright future starts with a bright classroom</span>
+                </div>
+            </div>
+            <div class="gallery-item scroll-reveal" style="--delay: 0.16s">
+                <img src="images/environment.png" alt="Tree planting" loading="lazy">
+                <div class="gallery-caption">
+                    <span>Every sapling is a promise to the future</span>
+                </div>
+            </div>
+            <div class="gallery-item gallery-item--wide scroll-reveal" style="--delay: 0.24s">
+                <img src="images/community.png" alt="Community gathering" loading="lazy">
+                <div class="gallery-caption">
+                    <span>Where conversations become catalysts for change</span>
+                </div>
+            </div>
+            <div class="gallery-item scroll-reveal" style="--delay: 0.32s">
+                <img src="images/empowerment.png" alt="Women learning skills" loading="lazy">
+                <div class="gallery-caption">
+                    <span>Hands that create, hearts that lead</span>
+                </div>
+            </div>
+            <div class="gallery-item gallery-item--tall scroll-reveal" style="--delay: 0.4s">
+                <img src="images/healthcare.png" alt="Healthcare outreach" loading="lazy">
+                <div class="gallery-caption">
+                    <span>Care that reaches the last mile</span>
+                </div>
+            </div>
+            <div class="gallery-item scroll-reveal" style="--delay: 0.48s">
+                <img src="images/volunteers.png" alt="Volunteers in action" loading="lazy">
+                <div class="gallery-caption">
+                    <span>Strangers arriving, family leaving</span>
+                </div>
+            </div>
+            <div class="gallery-item scroll-reveal" style="--delay: 0.56s">
+                <img src="images/landscape.png" alt="Peaceful landscape" loading="lazy">
+                <div class="gallery-caption">
+                    <span>The land remembers every kindness</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Get Involved -->
+    <section id="involved" class="section section--involved">
+        <div class="involved-bg" data-parallax="0.15">
+            <img src="images/volunteers.png" alt="Volunteers working together" loading="lazy">
+        </div>
+        <div class="involved-overlay"></div>
+        <div class="container involved-content">
+            <div class="involved-text scroll-reveal">
+                <h2 class="section-title section-title--light">Be part of<br><em>something beautiful</em></h2>
+                <p class="involved-desc">Whether you give your time, your skills, or your support — every contribution nurtures a community. There are many ways to walk this path with us.</p>
+            </div>
+            <div class="involved-options scroll-reveal" style="--delay: 0.2s">
+                <div class="involved-card" id="card-volunteer">
+                    <div class="involved-card-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C17.4 4 12 9.4 12 16C12 22.6 24 36 24 36C24 36 36 22.6 36 16C36 9.4 30.6 4 24 4Z" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="16" r="5" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Volunteer</h3>
+                    <p>Spend time in the communities. Teach, mentor, plant, heal. Leave with more than you brought.</p>
+                    <a href="#" class="involved-link">Learn more →</a>
+                </div>
+                <div class="involved-card" id="card-donate">
+                    <div class="involved-card-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 44C24 44 4 30 4 18C4 10 10 4 18 4C21.6 4 24 6 24 6C24 6 26.4 4 30 4C38 4 44 10 44 18C44 30 24 44 24 44Z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Donate</h3>
+                    <p>Every rupee reaches the ground. 92% of donations go directly to community programs. Full transparency, always.</p>
+                    <a href="#" class="involved-link">Give today →</a>
+                </div>
+                <div class="involved-card" id="card-partner">
+                    <div class="involved-card-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="20" r="8" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="20" r="8" stroke="currentColor" stroke-width="2"/><path d="M8 38C8 32 12 28 16 28C18 28 20 29 22 30" stroke="currentColor" stroke-width="2"/><path d="M40 38C40 32 36 28 32 28C30 28 28 29 26 30" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Partner</h3>
+                    <p>Collaborate with us as a CSR partner, academic institution, or fellow organization. Together, we go further.</p>
+                    <a href="#" class="involved-link">Connect with us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="var(--earth-dark)"/>
+            </svg>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <a href="#" class="footer-logo">
+                            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4C20 4 8 12 8 22C8 28.627 13.373 34 20 34C26.627 34 32 28.627 32 22C32 12 20 4 20 4Z" fill="currentColor" opacity="0.2"/>
+                                <path d="M20 8C20 8 12 14 12 22C12 26.418 15.582 30 20 30C24.418 30 28 26.418 28 22C28 14 20 8 20 8Z" fill="currentColor" opacity="0.4"/>
+                                <path d="M20 12C20 12 15 16 15 22C15 24.761 17.239 27 20 27C22.761 27 25 24.761 25 22C25 16 20 12 20 12Z" fill="currentColor" opacity="0.7"/>
+                                <line x1="20" y1="22" x2="20" y2="38" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                            </svg>
+                            <span>Roots of Hope</span>
+                        </a>
+                        <p class="footer-tagline">Nurturing communities.<br>Growing futures.</p>
+                        <p class="footer-desc">A registered non-profit working across 140 villages in India, dedicated to education, healthcare, environmental sustainability, and women empowerment.</p>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>Explore</h4>
+                        <a href="#mission">Our Story</a>
+                        <a href="#impact">Impact</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#stories">Stories</a>
+                        <a href="#journey">Journey</a>
+                        <a href="#gallery">Gallery</a>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>Get Involved</h4>
+                        <a href="#">Volunteer</a>
+                        <a href="#">Donate</a>
+                        <a href="#">Partner With Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Internships</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Reach Out</h4>
+                        <p>hello@rootsofhope.org</p>
+                        <p>+91 98765 43210</p>
+                        <p>Village Sundarpura, Block Rajgarh,<br>Rajasthan 301408, India</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4L10.5 12.5L4 20H6L11.5 14L16 20H20L13 11L19 4H17L12 9.5L8 4H4Z"/></svg>
+                            </a>
+                            <a href="#" aria-label="Facebook" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2H15C13.343 2 12 3.343 12 5V8H9V12H12V22H16V12H19L20 8H16V5C16 4.448 16.448 4 17 4H20V2H18Z"/></svg>
+                            </a>
+                            <a href="#" aria-label="YouTube" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Roots of Hope Foundation. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Annual Report</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
